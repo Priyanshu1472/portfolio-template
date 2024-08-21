@@ -733,21 +733,77 @@ h3.my-profession{
         display: block;
         margin-left: 0;
     }
+    .priyanshu .nav-toggler{
+        display: flex;
+    }
+    .about .about-content .education,
+    .about .about-content .experience{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 
 }
 @media (max-width: 1270){
     .home-img::after{
         display: none;
     }
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
-@media (max-width: 900px){
-    .priyanshu .nav-toggler{
+@media (max-width: 990px){
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .about .about-content .education,
+    .about .about-content .experience{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-info{
+        flex: 0 0 100;
+        max-width: 100%;
+    }
+    .home .home-img{
+        display: none;
+    }
+
+    .home .container .row{
+        display: block;
+    }
+}
+
+@media (max-width: 767px){
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 525px){
+    .home .home-info .name{
         display: flex;
+        flex-wrap: wrap;
     }
-    .priyanshu{
-        width: 270px;
-    }
-    .main-content{
-        padding-left: 270px;
+    .home .home-info h3.my-profession{
+        font-size: 30px;
     }
 }
