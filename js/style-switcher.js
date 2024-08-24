@@ -32,7 +32,7 @@ dayNight.addEventListener("click", () => {
 });
 window.addEventListener("load", () => {
   if (document.body.classList.contains("dark")) {
-    dayNight.querySelector("i").classList.add("fa-sun");
+    dayNight.querySelector("i").classList.add("fa-circle");
   } else {
     dayNight.querySelector("i").classList.add("fa-moon");
   }

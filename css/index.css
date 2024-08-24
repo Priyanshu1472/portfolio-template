@@ -803,6 +803,11 @@ h3.my-profession{
     padding: 0 50px;
 }
 
+.extra-i{
+    font-size: 20px;
+    color: var(--text-black-900)
+};
+
 
 @media (max-width: 1200px){
     .priyanshu{
