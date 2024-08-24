@@ -371,6 +371,7 @@ h3.my-profession{
 }
 
 .typing{
+    font-size: 25px;
     color: var(--skin-color);
 }
 
@@ -704,13 +705,23 @@ h3.my-profession{
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    padding-bottom: 59.7%; /* Maintain the aspect ratio of 670x400 */
+    position: relative;
 }
 
-.portfolio .portfolio-item-inner img{
+.portfolio .portfolio-img img{
     width: 100%;
     height: 100%;
-    transition: all 0.3s ease;
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
 
 /* Contact */
 .contact-title{
@@ -809,19 +820,28 @@ h3.my-profession{
 };
 
 
+@media (max-width: 1170px){
+    .home .home-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img{
+        display: none;
+    }
+}
+
+
 @media (max-width: 1200px){
     .priyanshu{
-        left: -270px;
+        display: none;
     }
+
     .main-content{
         padding-left: 0;
     }
     .about .about-content .personal-info .info-item p span{
         display: block;
         margin-left: 0;
-    }
-    .priyanshu .nav-toggler{
-        display: flex;
     }
     .about .about-content .education,
     .about .about-content .experience{
@@ -834,12 +854,13 @@ h3.my-profession{
         flex: 0 0 50%;
         max-width: 50%;
     }
-
 }
-@media (max-width: 1270){
-    .home-img::after{
+@media (max-width: 1270px){
+    .home-img::after,
+    .home-img::before{
         display: none;
     }
+
     .contact .contact-info-item,
     .portfolio .portfolio-item,
     .service .service-item{
