@@ -288,6 +288,10 @@ ul{
   justify-content: center;
   transition-duration: .3s;
 }
+
+.containerFour a{
+  background-color: #405DE6;
+}
 /* instagram*/
 .containerOne:hover {
   background-color: var(--bg-black-50);
@@ -303,7 +307,7 @@ ul{
   background-color: var(--bg-black-50);
   transition-duration: .3s;
 }
-/* Whatsapp*/
+/* Github*/
 .containerFour:hover {
   background-color: var(--bg-black-50);
   transition-duration: .3s;
