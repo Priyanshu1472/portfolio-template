@@ -405,7 +405,7 @@ h3.my-profession{
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 35px;
+    right: 80px;
     bottom: -40px;
 }
 
@@ -417,7 +417,7 @@ h3.my-profession{
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: 35px;
+    left: 80px;
     top:-40px;
 }
 
