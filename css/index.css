@@ -731,6 +731,28 @@ h3.my-profession{
     left: 0;
 }
 
+.show-more-btn {
+    background: linear-gradient(180deg, var(--skin-color), var(--skin-color) );
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 3px 5px rgba(255, 255, 255, 0.3);
+    
+}
+
+.show-more-btn:hover {
+    transform: translateY(-3px);
+}
+
+.show-more-btn:active {
+    transform: translateY(-1px);
+}
+
 
 /* Contact */
 .contact-title{
